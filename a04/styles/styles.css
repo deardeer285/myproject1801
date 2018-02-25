@@ -1,0 +1,285 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* box-sizing reset */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* end box-sizing reset */
+
+/* type styles */
+
+body {
+	font-family: 'Open Sans', sans-serif;	
+}
+
+h1, h2, h3 {
+	font-family: 'Poiret One', cursive;
+	font-weight: normal;	
+}
+
+/* end type styles */
+
+html {
+	min-height: 100%;	
+}
+
+body {
+
+    background-attachment: fixed;	
+    background-color: hsl(34, 53%, 82%);
+	background-image: repeating-linear-gradient(45deg, transparent 5px, hsla(197, 62%, 11%, 0.5) 5px, hsla(197, 62%, 11%, 0.5) 10px, hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(5, 53%, 63%, 0.5) 35px, hsla(5, 53%, 63%, 0.5) 40px, hsla(197, 62%, 11%, 0.5) 40px, hsla(197, 62%, 11%, 0.5) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px, hsla(5, 53%, 63%, 0.5) 60px, hsla(5, 53%, 63%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 80px, hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(5, 53%, 63%, 0.5) 90px, hsla(5, 53%, 63%, 0.5) 110px, hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 120px, hsla(197, 62%, 11%, 0.5) 120px, hsla(197, 62%, 11%, 0.5) 140px )
+	,repeating-linear-gradient(135deg, transparent 5px, hsla(197, 62%, 11%, 0.5) 5px, hsla(197, 62%, 11%, 0.5) 10px, hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(5, 53%, 63%, 0.5) 35px, hsla(5, 53%, 63%, 0.5) 40px, hsla(197, 62%, 11%, 0.5) 40px, hsla(197, 62%, 11%, 0.5) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px, hsla(5, 53%, 63%, 0.5) 60px, hsla(5, 53%, 63%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 80px, hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(5, 53%, 63%, 0.5) 90px, hsla(5, 53%, 63%, 0.5) 110px, hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 140px, hsla(197, 62%, 11%, 0.5) 140px, hsla(197, 62%, 11%, 0.5) 160px);
+
+}
+
+.wrapper {
+	background-color: white;
+	margin: 30px auto;	
+    max-width: 1600px;
+	padding:10px 20px;
+	border-radius:40px;
+}
+
+/* header styles */
+
+.logo {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+    border-radius:20px;
+    -webkit-animation: rotation 1s 3 alternate;
+    -moz-animation: rotation 1s 3 alternate;
+    -o-animation: rotation 1s 3 alternate;
+    animation: rotation 1s 3 alternate;
+/*
+    animation-name: rotation;
+    animation-duration: 1s;
+    animation-iteration-count: 3; 
+    animation-direction: alternate;
+*/
+}
+@-webkit-keyframes rotation {
+    0% {
+        -webkit-transform: rotate(0deg) scale(0);
+    }
+    100% {
+        -webkit-transform: rotate(720deg) scale(1);
+    }
+}
+
+@-moz-keyframes rotation {
+    0% {
+        -moz-transform: rotate(0deg) scale(0);
+    }
+    100%{
+        -moz-transform: rotate(720deg) scale(1);
+    }
+}
+@-o-keyframes rotation {
+    0% {
+        -o-transform: rotate(0deg) scale(0);
+    }
+    100%{
+        -o-transform: rotate(720deg) scale(1);
+    }
+    
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg) scale(0);
+    }
+    100% {
+        transform: rotate(720deg) scale(1);
+    }
+   
+}
+
+
+/* nav styles */
+header nav ul{
+   // margin: auto;
+	padding: 0;
+	list-style: none;
+    display: flex;
+    
+}
+header nav li {
+    flex-grow: 1;
+    text-align: center;
+	line-height: 56px;
+    border-right: 2px solid white;
+    background: linear-gradient(to top, #0c113f 0%, #36ac15 100%);
+}
+
+header nav a{
+    font-size: 1.3em;
+    font-weight: 800;
+    text-decoration: none;
+    color: white;
+}
+
+nav li:hover,
+nav li:focus {
+	background: #09a569;
+	cursor: pointer;
+}
+/* end nav styles */
+
+/* end header styles */
+
+/* main styles */
+
+main {
+    padding: 0 30px 30px;	
+    max-width: 1600px;
+}
+
+main h1 {
+	text-align: center;	
+	font-size: 3rem;
+}
+
+/* Gallery Styles */
+
+main div:first-of-type {
+    margin: 0 auto;
+    width: 85%;
+    padding: 5px 2px;
+	background-image: url(../images/bg-gallery.jpg);
+	border: groove 9px #976236;	
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+
+main div:first-of-type img:nth-child(1) {
+	border: 3px solid white;
+    transform: rotate(-10deg) scale(0.7);   
+    
+}
+main div:first-of-type img:nth-child(n){
+    margin-left: -70px;
+    margin-right: -70px;
+    transition: all 1s ease;
+}
+
+main div:first-of-type img:nth-child(n):hover {
+	border: 6px solid white;
+    transform: scale(1.5);   
+    
+}
+
+main div:first-of-type img:nth-child(2) {
+	border: 3px solid white;
+    transform: rotate(15deg) scale(0.7);   
+}
+
+main div:first-of-type img:nth-child(3) {
+	border: 3px solid white;
+    transform: rotate(-10deg) scale(0.7);
+}
+
+main div:first-of-type img:nth-child(4) {
+	border: 3px solid white;
+    transform: rotate(30deg) scale(0.7);
+}
+
+main div:first-of-type img:nth-child(5) {
+	border: 3px solid white;
+    transform: rotate(-20deg) scale(0.7);
+}
+
+/* End Gallery Styles */
+
+/* Article styles */
+main div:last-of-type {
+    display: flex; 
+    flex-shrink: 1.8;
+}
+article{
+   //flex-basis:auto;
+    height: auto;
+	border-radius:0 20px;
+	background:#f6feb1;
+	box-shadow: 7px 7px 10px black;	
+	margin:10px;
+    border: 2px solid grey;
+    font-size:15px;
+}
+
+article:nth-child(2)
+{
+	background:#c8fdd2;
+}
+article h1 {
+	font-size: 32px;
+	margin-bottom: 2px;
+	margin-top: 2px;	
+}
+
+article h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+	text-align: center;
+	margin-top: 0;	
+}
+
+article img {
+	display: block;
+	margin: 0 auto;
+    max-width: 100%;
+    border-radius:55%;
+    transform: scale(0.8);
+}
+
+/* end Article styles */
+
+/* end main styles */
+
+/* footer styles */
+
+footer {
+	margin-top: 30px;
+	padding: 20px;
+	border-top: 1px dotted #ccc;
+	text-align: center;	
+}
+
+/* end footer styles */
+
+/* responsive development*/
+
+@media screen and (max-width: 600px)
+{
+
+	main div:last-of-type {
+		flex-direction: column;
+    }
+
+}
+@media screen and (max-width: 768px)
+{
+    
+    main div:first-of-type img:nth-child(n){
+        width: 30%;
+        height: 30%;
+     } 
+
+}
+/* end responsive development*/
+
+
+
+
+
+
+
